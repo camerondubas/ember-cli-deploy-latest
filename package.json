@@ -15,7 +15,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "publish": "",
+    "release": "release-it",
     "test": "jest"
   },
   "dependencies": {},
@@ -25,7 +25,8 @@
     "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-node": "^11.0.0",
     "jest": "^27.3.1",
-    "lodash.clonedeep": "^4.5.0"
+    "lodash.clonedeep": "^4.5.0",
+    "release-it": "^14.11.6"
   },
   "engines": {
     "node": "10.* || >= 12"
