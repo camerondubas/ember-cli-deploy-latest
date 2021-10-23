@@ -6,7 +6,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: ["eslint:recommended"],
+  extends: ["plugin:jest/recommended"],
   env: {
     node: true
   },

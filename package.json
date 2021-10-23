@@ -14,13 +14,15 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest",
-    "publish": ""
+    "lint": "eslint .",
+    "publish": "",
+    "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
     "ember-cli": "~3.17.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-node": "^11.0.0",
     "jest": "^27.3.1",
     "lodash.clonedeep": "^4.5.0"
