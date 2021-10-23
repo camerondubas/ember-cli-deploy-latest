@@ -14,31 +14,18 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
-    "lint:hbs": "ember-template-lint .",
-    "lint:js": "eslint .",
-    "start": "ember serve",
-    "test": "npm-run-all lint:* test:*",
-    "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
+    "test": "",
+    "publish": ""
   },
-  "dependencies": {
-    "ember-cli-babel": "^7.18.0",
-    "ember-cli-htmlbars": "^4.2.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ember-cli": "~3.17.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-node": "^11.0.0"
+    "eslint-plugin-node": "^11.0.0",
+    "jest": "^27.3.1"
   },
   "engines": {
     "node": "10.* || >= 12"
   },
-  "ember": {
-    "edition": "octane"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
-  }
+  "ember-addon": {}
 }
