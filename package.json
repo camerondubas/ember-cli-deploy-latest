@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-latest",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "An ember-cli-deploy plugin that allows activating the latest existing revision",
   "keywords": [
     "ember-addon",
