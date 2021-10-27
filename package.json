@@ -31,5 +31,13 @@
   "engines": {
     "node": "10.* || >= 12"
   },
-  "ember-addon": {}
+  "ember-addon": {},
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "hooks": {
+      "after:bump": "npx auto-changelog"
+    }
+  }
 }
