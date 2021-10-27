@@ -7,8 +7,6 @@ module.exports = {
     return {
       name: options.name,
 
-      runAfter: ["s3-index"],
-
       willActivate(context) {
         const inputRevision = context.commandOptions.revision;
         const hasRevisions = Array.isArray(context.initialRevisions) && context.initialRevisions.length > 0
