@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-latest",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Adds the ability to activate the latest revision, without needing to provide the revision key.",
   "keywords": [
     "ember-addon",
