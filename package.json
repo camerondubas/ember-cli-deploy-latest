@@ -1,14 +1,14 @@
 {
   "name": "ember-cli-deploy-latest",
   "version": "0.2.0",
-  "description": "Adds the ability to activate the latest revision, without needing to provide the revision key.",
+  "description": "An ember-cli-deploy plugin that allows activating the latest existing revision",
   "keywords": [
     "ember-addon",
     "ember-cli-deploy-plugin"
   ],
-  "repository": "",
+  "repository": "https://github.com/camerondubas/ember-cli-deploy-latest",
   "license": "MIT",
-  "author": "",
+  "author": "Cameron Dubas",
   "directories": {
     "doc": "doc",
     "test": "tests"
