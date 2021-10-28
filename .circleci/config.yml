@@ -7,6 +7,9 @@ jobs:
   test:
     docker:
       - image: cimg/node:16.13-browsers
+        auth:
+          username: $DOCKERHUB_USERNAME
+          password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
       - node/install-packages:
@@ -22,4 +25,6 @@ workflows:
   version: 2
   run_test:
     jobs:
-      - test
+      - test:
+          context:
+            - "Docker Hub"
