@@ -1,25 +1,23 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@4.7.0
+
 jobs:
   test:
     docker:
       - image: cimg/node:16.13-browsers
-        environment:
-          JOBS: 1
     steps:
       - checkout
 
-      - run:
-          name: Install Dependencies
-          command: yarn
+      - node/install:
+          install-yarn: true
 
-      - run:
-          name: Lint
-          command: yarn lint
+      - node/run:
+          yarn-run: lint
 
-      - run:
-          name: Test
-          command: yarn test
+      - node/run:
+          yarn-run: test
 
 workflows:
   version: 2
