@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.7.0
+  snyk: snyk/snyk@1.1.2
 
 jobs:
   test:
@@ -20,6 +21,7 @@ jobs:
       - run:
           command: yarn run test
           name: Run tests
+      - snyk/scan
 
 workflows:
   version: 2
@@ -28,3 +30,4 @@ workflows:
       - test:
           context:
             - "Docker Hub"
+            - "snyk"
